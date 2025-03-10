@@ -8,14 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IS1_ViewController" customModule="InternI1" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="issue1Viewcontroller" customModule="InternI1" customModuleProvider="target">
             <connections>
-                <outlet property="clickButton" destination="2UA-gZ-eZ8" id="Jfl-Qc-4ae"/>
-                <outlet property="titleLabel" destination="t9L-1p-zs8" id="FBm-XS-YDG"/>
-                <outlet property="view" destination="iN0-l3-epB" id="aKq-JQ-7UI"/>
-                <outletCollection property="descriptionLabel" destination="trz-xC-idC" collectionClass="NSMutableArray" id="4kq-Lh-ruW"/>
-                <outletCollection property="descriptionLabel" destination="Sdv-vs-fUD" collectionClass="NSMutableArray" id="Yxm-qs-QR4"/>
-                <outletCollection property="descriptionLabel" destination="Mch-Cv-Rt4" collectionClass="NSMutableArray" id="Viz-pS-w0t"/>
+                <outlet property="clickButton" destination="2UA-gZ-eZ8" id="VXX-QK-cT0"/>
+                <outlet property="titleLabel" destination="t9L-1p-zs8" id="Pkh-eC-eXc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="lZf-dg-zEy"/>
+                <outletCollection property="descriptionLabel" destination="trz-xC-idC" collectionClass="NSMutableArray" id="xzh-2k-1sZ"/>
+                <outletCollection property="descriptionLabel" destination="Sdv-vs-fUD" collectionClass="NSMutableArray" id="8wK-Vz-Qbv"/>
+                <outletCollection property="descriptionLabel" destination="Mch-Cv-Rt4" collectionClass="NSMutableArray" id="ujb-zW-aOm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -23,16 +23,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9L-1p-zs8" userLabel="Title">
-                    <rect key="frame" x="100" y="44" width="214" height="40"/>
-                    <color key="backgroundColor" systemColor="systemCyanColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="9OY-B6-xOq"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trz-xC-idC" userLabel="Label1">
                     <rect key="frame" x="100" y="487.66666666666669" width="214" height="40.000000000000057"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,6 +58,16 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9L-1p-zs8" userLabel="Title">
+                    <rect key="frame" x="100" y="44" width="214" height="40"/>
+                    <color key="backgroundColor" systemColor="systemCyanColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9OY-B6-xOq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

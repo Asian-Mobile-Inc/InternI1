@@ -7,13 +7,18 @@
 
 import UIKit
 
-class IS1_ViewController: UIViewController {
-
-    // outlet collection
-    @IBOutlet var descriptionLabel: [UILabel]!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var clickButton: UIButton!
+class issue1Viewcontroller: UIViewController {
     
+    
+    @IBOutlet var descriptionLabel: [UILabel]!
+    @IBOutlet weak var clickButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    // fix: load .xib
+    override func loadView() {
+        let nib = UINib(nibName: "issue1ViewController", bundle: nil)
+        self.view = nib.instantiate(withOwner: self, options: nil).first as? UIView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,15 +66,9 @@ class IS1_ViewController: UIViewController {
         view.addSubview(clickButton)
         
         NSLayoutConstraint.activate([
-//            clickButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            clickButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             clickButton.heightAnchor.constraint(equalToConstant: 40),
             clickButton.widthAnchor.constraint(equalToConstant: 100),
-            
         ])
-        
-        
-        
     }
     
     @objc func tap() {
