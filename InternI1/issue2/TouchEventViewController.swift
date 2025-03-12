@@ -12,11 +12,6 @@ class TouchEventViewController: UIViewController {
     @IBOutlet weak var redView: UIView!
     @IBOutlet weak var greenView: UIView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     // Test touch methods
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("Touch began")
