@@ -1,24 +1,17 @@
 //
-//  IS1_ViewController.swift
+//  Issue1Viewcontroller.swift
 //  InternI1
 //
-//  Created by Thạnh Dương Hoàng on 10/3/25.
+//  Created by Thạnh Dương Hoàng on 12/3/25.
 //
 
 import UIKit
 
-class issue1Viewcontroller: UIViewController {
-    
-    
+class Issue1Viewcontroller: UIViewController {
+
     @IBOutlet var descriptionLabel: [UILabel]!
     @IBOutlet weak var clickButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
-    
-    // fix: load .xib
-    override func loadView() {
-        let nib = UINib(nibName: "issue1ViewController", bundle: nil)
-        self.view = nib.instantiate(withOwner: self, options: nil).first as? UIView
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +26,7 @@ class issue1Viewcontroller: UIViewController {
         
         descriptionLabel[1].text = "Label 2"
         descriptionLabel[1].textColor = .blue
-
+        
         descriptionLabel[2].text = "Label 3"
         descriptionLabel[2].textColor = .yellow
         
