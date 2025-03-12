@@ -12,11 +12,6 @@ class TouchEventViewController: UIViewController {
     @IBOutlet weak var redView: UIView!
     @IBOutlet weak var greenView: UIView!
     
-    override func loadView() {
-        let nib = UINib(nibName: "touchEventViewController", bundle: nil)
-        self.view = nib.instantiate(withOwner: self, options: nil).first as? UIView
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
