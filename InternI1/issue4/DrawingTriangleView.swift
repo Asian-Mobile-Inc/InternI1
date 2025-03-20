@@ -13,7 +13,6 @@ class DrawingTriangleView: UIView {
         path.move(to: CGPoint(x: self.frame.width/2, y: 0))
         path.addLine(to: CGPoint(x: 0, y: self.frame.height))
         path.addLine(to: CGPoint(x: self.frame.width, y: self.frame.height))
-        path.fill()
         path.close()
         UIColor.orange.setFill()
         path.fill()
